@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+  <title>Expense Tracker</title>
+</head>
+<body>
+  <header>
+    <h1>Expense Tracker</h1>
+  </header>
+  <main>
+    <div class="mainDiv">
+      <div class="input-container">
+      <input type="text" id="Input" placeholder="Expense">
+      <div id="options">
+        <div class="option">Rent</div>
+        <div class="option">Relax</div>
+        <div class="option">Grocery</div>
+        <div class="option">Outing</div>
+        <div class="option">others</div>
+      </div>
+    </div>
+        <input type="number" class="amountInput" placeholder="Amount">
+        <button id="clearBtn">Clear All</button>
+        <button id="addItem" type="button">Add</button>
+    </div>
+    <div>
+      <table id="expenseTable">
+        <thead>
+        <tr>
+          <th>Expense</th>
+          <th>Amount</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>
