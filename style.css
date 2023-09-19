@@ -1,0 +1,188 @@
+/* Reset CSS to remove default browser styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header styles */
+header {
+  background-color: rgb(98, 7, 183);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+/* Main container styles */
+.mainDiv {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 5px 5px 5px rgba(228, 215, 215, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as needed */
+  align-items: center; /* Adjust as needed */
+}
+
+/* Input and Options container */
+.input-container {
+  display: block;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+/* Input field styles */
+#Input {
+  min-width: 100%;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Options styles */
+#options {
+  display: none;
+  width: 100%;
+  z-index: 1;
+  position: absolute; 
+  background-color: rgb(98, 7, 183);
+  border: 1px solid gray;
+  border-radius: 4px;/* Position the options absolutely */
+}
+
+.option {
+  display: block;
+  padding: 5px;
+  cursor: pointer;
+  color: #fff;
+  border-bottom: 1px gray solid; /* Add cursor pointer for options */
+}
+
+.option:hover {
+  background-color: #ddd; /* Add a background color on hover */
+}
+
+/* Amount input and Add button styles */
+.amountInput {
+  min-width: 50%;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+#addItem {
+  background-color: rgb(98, 7, 183);
+  color: #fff;
+  min-width: 20%;
+  min-height: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+   /* Add cursor pointer for the button */
+}
+
+#clearBtn{
+  background-color: rgb(98, 7, 183);
+  color: #fff;
+  min-width: 20%;
+  min-height: 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#addItem:hover {
+  background-color: blueviolet;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in;
+}
+
+#clearBtn:hover {
+  background-color: blueviolet;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in;
+}
+
+#expenseTable{
+  width: 100%;
+  table-layout:fixed;
+  border-collapse: collapse;
+  border: 1px gray solid;
+}
+
+
+table thead{
+  height: 35px;
+  background-color: rgb(98, 7, 183);
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+table tr{
+  border: 1px gray solid;
+}
+
+table td{
+  border: 1px gray solid;
+}
+th:nth-child(1),
+td:nth-child(1){
+  width: 40%;
+}
+
+
+th:nth-child(2),
+td:nth-child(2){
+  width: 35%;
+}
+
+th:nth-child(3),
+td:nth-child(3){
+  width: 25%;
+}
+
+.customRow {
+  /* padding-right: 20px; */
+  /* border: 2px red solid; */
+  height: 30px;
+  color: black;
+  box-sizing: content-box; /* This ensures padding is not included in the height */
+}
+
+#expenseTable tr td:nth-child(1){
+  padding-left: 20px;
+  background-color: rgb(231, 224, 224);
+  min-width: 40%;
+}
+
+#expenseTable tr td:nth-child(2){
+  background-color: rgb(247, 228, 228);
+  text-align: center;
+  min-width: 35%;
+}
+
+#expenseTable tr td:nth-child(3){
+  text-align: center;
+  min-width: 25%;
+  background-color: #fff;
+}
+
+.delBtn{
+  padding: 1px 20px;
+  background-color: rgb(98, 7, 183);
+  border-radius: 10px;
+  color: #fff;
+}
+
+.delBtn:hover{
+  transform: scale(1.1,1.1);
+  transition: all 0.5s ease-in-out;
+  background-color: blueviolet;
+}
